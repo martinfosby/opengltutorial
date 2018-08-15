@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="resource_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite_renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game_level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ball_object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="particle_generator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="post_processor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text_renderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game_level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ball_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="particle_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="post_processor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="power_up.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text_renderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lamp.vs" />
+    <None Include="lamp.frag" />
+    <None Include="lighting.frag" />
+    <None Include="lighting.vs" />
+    <None Include="Shaders\advanced.vs" />
+    <None Include="Shaders\advanced.frag" />
+    <None Include="Shaders\single_color.frag" />
+    <None Include="Shaders\screen.frag" />
+    <None Include="Shaders\screen.vs" />
+    <None Include="Shaders\skybox.vs" />
+    <None Include="Shaders\skybox.frag" />
+    <None Include="Shaders\ubo.vs" />
+    <None Include="Shaders\geometry.vs" />
+    <None Include="Shaders\geometry.frag" />
+    <None Include="Shaders\geometry.gs" />
+    <None Include="shaders\normals.vs" />
+    <None Include="shaders\normals.frag" />
+    <None Include="shaders\normals.gs" />
+    <None Include="shaders\instancing.vs" />
+    <None Include="shaders\instancing.frag" />
+    <None Include="shaders\skyboxAdvanced.vs" />
+    <None Include="shaders\skyboxAdvanced.frag" />
+    <None Include="shaders\post_processing.vs" />
+    <None Include="shaders\post_processing.frag" />
+    <None Include="shaders\advanced_lighting.vs" />
+    <None Include="shaders\advanced_lighting.frag" />
+    <None Include="shaders\gamma_correction.vs" />
+    <None Include="shaders\gamma_correction.frag" />
+    <None Include="shaders\shadow_mapping_depth.vs" />
+    <None Include="shaders\shadow_mapping_depth.frag" />
+    <None Include="shaders\debug_quad.vs" />
+    <None Include="shaders\debug_quad_depth.frag" />
+    <None Include="shaders\shadow_mapping.vs" />
+    <None Include="shaders\shadow_mapping.frag" />
+    <None Include="shaders\point_shadows.frag" />
+    <None Include="shaders\point_shadows_depth.vs" />
+    <None Include="shaders\point_shadows_depth.gs" />
+    <None Include="shaders\point_shadows_depth.frag" />
+    <None Include="shaders\point_shadows.vs" />
+    <None Include="shaders\normal_mapping.vs" />
+    <None Include="shaders\normal_mapping.frag" />
+    <None Include="shaders\parallax_mapping.frag" />
+    <None Include="shaders\parallax_mapping.vs" />
+    <None Include="shaders\hdr.vs" />
+    <None Include="shaders\hdr.frag" />
+    <None Include="shaders\lightingHdr.vs" />
+    <None Include="shaders\lightingHdr.frag" />
+    <None Include="shaders\bloom.vs" />
+    <None Include="shaders\bloom.frag" />
+    <None Include="shaders\light_box.frag" />
+    <None Include="shaders\blur.vs" />
+    <None Include="shaders\blur.frag" />
+    <None Include="shaders\bloom_final.vs" />
+    <None Include="shaders\bloom_final.frag" />
+    <None Include="shaders\g_buffer.vs" />
+    <None Include="shaders\g_buffer.frag" />
+    <None Include="shaders\deferred_shading.vs" />
+    <None Include="shaders\deferred_shading.frag" />
+    <None Include="shaders\deferred_light_box.vs" />
+    <None Include="shaders\deferred_light_box.frag" />
+    <None Include="shaders\text.vs" />
+    <None Include="shaders\text.frag" />
+    <None Include="shaders\sprite.vs" />
+    <None Include="shaders\sprite.frag" />
+    <None Include="levels\one.lvl" />
+    <None Include="levels\two.lvl" />
+    <None Include="levels\three.lvl" />
+    <None Include="levels\four.lvl" />
+    <None Include="shaders\particle.vs" />
+    <None Include="shaders\particle.frag" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="graphicsTutorials.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

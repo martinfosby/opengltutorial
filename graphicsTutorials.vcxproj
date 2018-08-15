@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{603C5819-5E9D-42E7-8BC2-9A829EB035B1}</ProjectGuid>
+    <RootNamespace>graphicsTutorials</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)deps/include/;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)deps/lib/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(SolutionDir)derp/include/;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)derp/lib/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)deps/include/;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)deps/lib/;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;SOIL.lib;assimp-vc140-mt.lib;freetyped.lib;vulkan-1.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;SOIL.lib;assimp-vc140-mt.lib;freetyped.lib;vulkan-1.lib;irrKlang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ball_object.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="game_level.cpp" />
+    <ClCompile Include="game_object.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="particle_generator.cpp" />
+    <ClCompile Include="post_processor.cpp" />
+    <ClCompile Include="resource_manager.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="sprite_renderer.cpp" />
+    <ClCompile Include="texture.cpp" />
+    <ClCompile Include="text_renderer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ball_object.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="game_level.h" />
+    <ClInclude Include="game_object.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="particle_generator.h" />
+    <ClInclude Include="post_processor.h" />
+    <ClInclude Include="power_up.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource_manager.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="sprite_renderer.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="text_renderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lamp.frag" />
+    <None Include="lamp.vs" />
+    <None Include="levels\four.lvl" />
+    <None Include="levels\one.lvl" />
+    <None Include="levels\three.lvl" />
+    <None Include="levels\two.lvl" />
+    <None Include="lighting.frag" />
+    <None Include="lighting.vs" />
+    <None Include="Shaders\advanced.frag" />
+    <None Include="Shaders\advanced.vs" />
+    <None Include="shaders\advanced_lighting.frag" />
+    <None Include="shaders\advanced_lighting.vs" />
+    <None Include="shaders\bloom.frag" />
+    <None Include="shaders\bloom.vs" />
+    <None Include="shaders\bloom_final.frag" />
+    <None Include="shaders\bloom_final.vs" />
+    <None Include="shaders\blur.frag" />
+    <None Include="shaders\blur.vs" />
+    <None Include="shaders\debug_quad.vs" />
+    <None Include="shaders\debug_quad_depth.frag" />
+    <None Include="shaders\deferred_light_box.frag" />
+    <None Include="shaders\deferred_light_box.vs" />
+    <None Include="shaders\deferred_shading.frag" />
+    <None Include="shaders\deferred_shading.vs" />
+    <None Include="shaders\g_buffer.frag" />
+    <None Include="shaders\g_buffer.vs" />
+    <None Include="shaders\hdr.frag" />
+    <None Include="shaders\hdr.vs" />
+    <None Include="shaders\lightingHdr.frag" />
+    <None Include="shaders\lightingHdr.vs" />
+    <None Include="shaders\light_box.frag" />
+    <None Include="shaders\normal_mapping.frag" />
+    <None Include="shaders\normal_mapping.vs" />
+    <None Include="shaders\parallax_mapping.frag" />
+    <None Include="shaders\parallax_mapping.vs" />
+    <None Include="shaders\particle.frag" />
+    <None Include="shaders\particle.vs" />
+    <None Include="shaders\point_shadows.frag" />
+    <None Include="shaders\point_shadows_depth.frag" />
+    <None Include="shaders\point_shadows_depth.vs" />
+    <None Include="shaders\point_shadows_depth.gs" />
+    <None Include="shaders\gamma_correction.frag" />
+    <None Include="shaders\gamma_correction.vs" />
+    <None Include="Shaders\geometry.frag" />
+    <None Include="Shaders\geometry.gs" />
+    <None Include="Shaders\geometry.vs" />
+    <None Include="shaders\instancing.frag" />
+    <None Include="shaders\instancing.vs" />
+    <None Include="shaders\normals.frag" />
+    <None Include="shaders\normals.gs" />
+    <None Include="shaders\normals.vs" />
+    <None Include="shaders\point_shadows.vs" />
+    <None Include="shaders\post_processing.frag" />
+    <None Include="shaders\post_processing.vs" />
+    <None Include="Shaders\screen.frag" />
+    <None Include="Shaders\screen.vs" />
+    <None Include="shaders\shadow_mapping.frag" />
+    <None Include="shaders\shadow_mapping.vs" />
+    <None Include="shaders\shadow_mapping_depth.frag" />
+    <None Include="shaders\shadow_mapping_depth.vs" />
+    <None Include="Shaders\single_color.frag" />
+    <None Include="Shaders\skybox.frag" />
+    <None Include="Shaders\skybox.vs" />
+    <None Include="shaders\skyboxAdvanced.frag" />
+    <None Include="shaders\skyboxAdvanced.vs" />
+    <None Include="shaders\sprite.frag" />
+    <None Include="shaders\sprite.vs" />
+    <None Include="shaders\text.frag" />
+    <None Include="shaders\text.vs" />
+    <None Include="Shaders\ubo.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="graphicsTutorials.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
